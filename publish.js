@@ -7,7 +7,7 @@ var rootFolder = path.resolve('.');
 var zipPath = path.resolve(rootFolder, '../whoisbot.zip');
 var kuduApi = 'https://whoisbot.scm.azurewebsites.net/api/zip/site/wwwroot';
 var userName = '$whoisbot';
-var password = 's96XLvaowdbx9cvkzF4tPt6pQoKhShpb4Tt0ERLlh4MJRwf4R0aq7qPti2as';
+var password = '##########################################################';
 
 function uploadZip(callback) {
   fs.createReadStream(zipPath).pipe(request.put(kuduApi, {
