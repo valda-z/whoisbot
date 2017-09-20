@@ -59,9 +59,9 @@ var bot = new builder.UniversalBot(connector, function(session) {
                     }
                 });
                 if (webhost == '') {
-                    session.send("Not found.");
+                    session.send("**" + srvname + "** - Not found.");
                 } else {
-                    session.send("Web Hoster: **" + webhost + "**, IP Location: **" + iploc + "**");
+                    session.send("**" + srvname + "** - Web Hoster: **" + webhost + "**, IP Location: **" + iploc + "**");
                 }
             });
         }).on('error', function(e) {
